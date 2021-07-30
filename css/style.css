@@ -1,0 +1,245 @@
+*{
+    box-sizing:border-box;
+}
+html{
+    height: 100%;
+}
+body{
+    margin: 0px;
+    height: 100%;
+}
+header{
+    display: inline-block;
+    width: 100%;
+    height: 100px;
+    background: blue;
+    padding: 5px 0px;
+   
+}
+.content{
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+#logo img{
+    float: left;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+.container{ width: 940px;
+    height: 100%;
+    margin: 0 auto;
+    background-color: black;
+    
+}
+nav{
+    float: right;
+    margin-top: 15px;
+}
+nav li{
+    list-style-type: none;
+    font-size: 100%;
+    display: inline;
+}
+nav li a{
+    
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+    padding: 16px 24px;
+    text-align: center;
+    font-family: 'Arial';
+}
+.image{
+    width:60%;
+    margin: auto;
+   display: block;
+}
+h1{
+    text-align: center;
+    font-size: 1.5em;
+    font-family: Arial;
+    text-transform: capitalize;
+    
+}
+p{
+    text-align: center;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+table, th, td{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+th, td{
+    padding: 15px;
+    text-align: center;
+    background-color: gold;
+}
+th{
+    font-size: 1.5em;
+}
+table{
+    margin-left: 10px;
+    margin-right: 5px;
+    margin-bottom: 10px;
+    border-spacing: 50px;
+}
+table > caption{
+    font-size: 2em;
+    background-color: black;
+    color: white;
+}
+.img-container{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 4px;
+    justify-content: center;
+}
+.item{
+    margin: 5px;
+    border: 2px solid aqua;
+}
+
+.foot-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap:nowrap;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+    border: solid red;
+    background-color: black;
+}
+.foot-container > .column1 > h1{
+    color: white;
+    font-family: 'Arial';
+    font-size: 1.25em;
+}
+.foot-container > .column2 > h1{
+    color: white;
+    font-family: 'Arial';
+    font-size: 1.25em;
+}
+.foot-container > .column3 > h1{
+    color: white;
+    font-family: 'Arial';
+    font-size: 1.25em;
+}
+.foot-container > .column1 > p{
+    color: white;
+    font-family: 'Arial';
+    margin-bottom: 0px;
+    
+}
+.foot-container > .column2 > p{
+    color: white;
+    font-family: 'Arial';
+    font-size: 1em;
+}
+.foot-container > .column3 > p{
+    font-family: 'Arial';
+    color: white;
+    
+}
+.column1{
+    flex: 1 1 33%;
+}
+.column2{
+    flex: 1 1 33%;
+}
+.column3{
+    flex: 1 1 33%;
+}
+
+
+form{
+    margin: 0 auto;
+
+    
+}
+
+input[type="text"],select,textarea{
+    width: 50%;
+    padding: 12px;
+    border: 1px solid grey;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    resize: vertical;
+    background-color: black;
+    color: white;
+
+}
+
+input[type="email"]{
+    width: 50%;
+    padding: 12px;
+    border: 1px solid grey;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    resize: vertical;
+    background-color: black;
+    color: white;
+    
+}
+
+
+select{
+    background-color: gray;
+}
+}
+
+input[type="tel"]{
+    width: 50%;
+    padding: 12px;
+    border: 1px solid grey;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    background-color: black;
+    color: white;
+}
+label{
+    display: block;
+    font-size: 1.25em;
+    color: white;
+    
+    
+}
+input[type="submit"]{
+    background-color: gray;
+    padding: 12px;
+    width: 50%;
+    margin-bottom: 15px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+input[type="submit"]:hover{
+    background-color:aqua;
+}
+/* These rules apply to the medium rez display and cascade down to the low rez display */
+
+@media (max-width: 768px){
+    body{
+        background-color: aqua;
+    }
+    .container{
+        width: 100%;
+    }
+    #logo{
+        width: 25%;
+    }
+    nav li{
+        margin-right: 15px;
+        font-size: 90%;
+    }
+    .item{
+        width: 25%;
+    }
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Bubbles Car Wash</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body style="background-color: black;">
+        <header>
+    <div class="container">
+        <div id="logo" ><img src = "images/bubbles.jpg" width="100px" height="80px"></div>
+    <nav>
+        <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="price.html">Prices</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    </div>     
+    </header>
+    <form action="#" name ="contact_form">
+        <label for="name">Name</label>
+        
+        <input type="text" id="name" name="name"
+        required>
+            
+        <label for="phone">Phone</label>
+        <input type="tel" id="phone" name="phone" patttern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+            <small>Format:XXX-XXX-XXXX</small>
+        <label for="email">Email</label>
+        <input type="email"name="email" id="email" required>
+            
+        <label for="service">Service</label>
+        <select id="service" name="service"  required>
+        <option value="carwash">Car Wash</option>
+        <option value="car washandinterior">Car Wash/Interior</option>
+        <option value="carwashinteriorandpolish">Car Wash/Interior/Polish</option>
+         </select>
+        <label for="Message">Message</label>
+        <textarea id="message" name="message" row="10"></textarea>
+            
+        <input type="submit" value="Submit"
+        >
+        </form>
+    
+        
+        <footer id="footer">
+    <div class="foot-container">
+    <div class="column1"><h1>VISIT US</h1>
+    <p>Farmville, VA<br><br><br></p></div>
+    <div class="column2"><h1>CALL US</h1>
+    <p>(434)-547-9903<br><br><br></p></div>
+    <div class="column3"><h1>HOURS</h1>
+    <p>Mon-Fri 8:00am-5:00pm<br>Sun Closed<br>Sat By Appointment only</p></div>
+   </div>
+    
+    </footer>
+    </body>
+    
+</html>
