@@ -192,7 +192,7 @@ input[type="email"]{
 select{
     background-color: gray;
 }
-}
+
 
 input[type="tel"]{
     width: 50%;
@@ -241,5 +241,26 @@ input[type="submit"]:hover{
     }
     .item{
         width: 25%;
+    }
+}
+/*These rules apply to the low rez display, and do not cascade */
+@media (max-width: 320px){
+    header{
+        height: auto;
+    }
+    nav{
+        text-align: center;
+    }
+    nav ul{
+        display: inline-block;
+    }
+    nav li{
+        font-size: 75%;
+    }
+    #logo{
+        display: none;
+    }
+    .foot-container{
+        display: none;
     }
 }
