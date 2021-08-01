@@ -43,7 +43,6 @@ nav li{
     display: inline;
 }
 nav li a{
-    
     color: white;
     text-decoration: none;
     font-size: 25px;
@@ -157,9 +156,7 @@ table > caption{
 
 
 form{
-    margin: 0 auto;
-
-    
+    margin: 0 auto;   
 }
 
 input[type="text"],select,textarea{
@@ -246,7 +243,7 @@ input[type="submit"]:hover{
     }
 }
 /*These rules apply to the low rez display, and do not cascade */
-@media (max-width: 320px){
+@media (max-width: 375px){
     header{
         height: auto;
     }
@@ -256,13 +253,27 @@ input[type="submit"]:hover{
     nav ul{
         display: inline-block;
     }
-    nav li{
-        font-size: 75%;
+    nav li a{
+        margin: 0;
+        font-size: 15px;
     }
     #logo{
         display: none;
     }
     .foot-container{
         display: none;
+    }
+    form{
+        text-align: center;
+        margin-top: 75px;
+        padding-top: 20px
+    } input[type=text],input[type=tel],input[type=email],select, textarea{
+        width: 100%;
+    }
+    input[type=submit]{
+       display: block;
+        margin: 0 auto;
+        text-align: center;
+        border-radius: 10px;
     }
 }
